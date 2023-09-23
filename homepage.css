@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.homepage {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 65%), rgba(0, 0, 0, 0.75)), url(images\ bus.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    height: 5.5vw;
+    /* width: 9vw; */
+    margin: 10px;
+    padding: 10px;
+}
+
+.navbar {
+    width: 93%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+@media (min-width:340px) and (max-width:500px) {
+    .navbar {
+        
+        width: 93%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}
+
+.navbar ul {
+    display: flex;
+    gap: 3.5vw;
+}
+
+@media (min-width:340px) and (max-width:500px) {
+    .navbar ul {
+        display: flex ;
+        gap: 3.5vw ;
+    }
+}
+
+.navbar ul li {
+    list-style-type: none;
+    display: block;
+    color: #fff;
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.6vw;
+}
+
+@media (min-width:340px) and (max-width:500px) {
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2.6vw;
+    }
+}
+
+.navbar ul:hover li {
+    filter: blur(1px);
+
+}
+
+.navbar ul li:hover {
+    filter: blur(0);
+    cursor: pointer;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, rgb(217, 115, 7)35%, rgb(251, 229, 30)100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    
+}    */
+/* .navbar ul li:hover{
+    
+    border: 1px solid rgb(237, 198, 27) ;
+    
+    transition-duration: 1s ;
+    border-radius: 2px;  
+} */
+
+/* .navbar ul li a:hover{
+   
+    color: rgb(237, 198, 27);
+    
+} */
+.heading {
+    font-size: 5.4vw;
+    color: #f08c14;
+    text-decoration: dotted;
+    margin-top: 12vh;
+    /*margin-left: 16vw; */
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.sec-heading {
+    color: rgba(247, 196, 30);
+    /* margin-left: 23vw; */
+    font-size: 3.4vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.third-heading {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6vw;
+}
+
+.btn {
+    width: 25vw;
+    top: 3.5vh;
+    left: 36vw;
+    height: 5.5vh;
+    border-radius: 30em;
+    font-size: 1.6vw;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
+
+}
+@media (min-width:750px) and (max-width:1000px) {
+    .btn {
+        width: 24.9vw;
+        top: 3.5vh;
+        left: 37vw;
+        height: 30px;
+        border-radius: 30em;
+        font-size: 1.7vw;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
+
+    }
+} 
+@media (min-width:500px) and (max-width:750px) {
+    .btn {
+        width: 24.9vw;
+        top: 3.5vh;
+        left: 37vw;
+        height: 30px;
+        border-radius: 30em;
+        font-size: 2vw;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
+
+    }
+}
+@media (max-width:500px) {
+    .btn {
+        width: 24.9vw;
+        top: 3.5vh;
+        left: 37vw;
+        height: 4vh;
+        border-radius: 30em;
+        font-size: 2.3vw;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
+
+    }
+}
+.btn::before {
+    content: '';
+    width: 0;
+    height: 5.5vh;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgb(217, 115, 7) 0%, rgb(251, 229, 30) 100%);
+    transition: 1.1s ease;
+    display: block;
+    z-index: -1;
+}
+
+
+
+
+.btn:hover a {
+
+    color: #ffffff;
+}
+
+.btn:hover:before {
+    width: 25em;
+
+}
+
+.btn a {
+    text-decoration: none;
+    color: rgb(32, 29, 29);
+}
