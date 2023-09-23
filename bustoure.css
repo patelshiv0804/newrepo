@@ -36,9 +36,10 @@ h1{
     font: size 2em;
 }
 h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
     text-decoration: underline;
     position: sticky;
-    
     display: inline-block;
 }
 .trip{
@@ -79,7 +80,7 @@ h2 {
 .trip-heading {
     background-color: #ffdd80;
     padding: 20px;
-    margin: 20px;
+    margin: 0px;
     text-align: center;
 }
 @media (max-width:500px) {
@@ -490,7 +491,7 @@ h2 {
 .container-1 .card .img1 {
     position: relative;
     width: 260px;
-    height: 260px;
+/*     height: 260px; */
     /* left: 20px; */
     /* box-shadow: 0 5px 20px rgba(0,0,0,0.2); */
 }
@@ -893,6 +894,31 @@ h2 {
     font-size: 1.5rem;
     color: #666;
 }
+@media (max-width:540px){
+    .service .box .s1 {
+        flex: 1 1 25rem;
+        border-radius: 0.5rem;
+        padding: 1rem;
+    
+        text-align: center;
+    }
+    
+    .service .box .s1 i {
+        font-weight: 900;
+        font-size: 35px;
+    }
+    
+    .service .box .s1 h3 {
+        font-size: 1.8rem;
+        color: #333;
+        margin: 1rem;
+    }
+    
+    .service .box .s1 p {
+        font-size: 1rem;
+        color: #666;
+    } 
+}
 
 /* //////////////////////////contact us//////////////////////////////////// */
 /* .contact-heading {
@@ -1065,15 +1091,15 @@ button[type="submit"]:hover {
 @media (min-width:750px) and (max-width:1000px){
     .image {
         width: 40vw;
-        height: 29.5vh;
+/*         height: 29.5vh; */
         border-radius: 50%;
         object-fit: cover;
         margin-left: 0%;
     }
 }@media (min-width:500px) and (max-width:750px){
     .image {
-        width: 40vw;
-        height: 30.5vh;
+        width: 38vwvw;
+/*         height: 30.5vh; */
         border-radius: 50%;
         object-fit: cover;
         margin-left: 0%;
@@ -1081,12 +1107,20 @@ button[type="submit"]:hover {
 }
 @media (max-width:500px){
     .image {
+         position: sticky;
+        right: 18vw;
         margin-top: 10% ;
+        width: 75%;
+        height: 75%;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 0%;
+/*         margin-top: 10% ;
         width: 66vw;
         height: 32.5vh;
         border-radius: 50%;
         object-fit: cover;
-        margin-left: 0%;
+        margin-left: 0%; */
     }
 }
 
