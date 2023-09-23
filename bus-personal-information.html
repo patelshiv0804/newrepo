@@ -1,0 +1,334 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Information Form</title>
+  <style>
+    /* CSS Styling for the form */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(geran-de-klerk-WJkc3xZjSXw-unsplash.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+     background-position: center;
+
+    }
+    
+    .container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    textarea {
+      height: 100px;
+    }
+    
+    input[type="checkbox"] {
+      margin-bottom: 10px;
+    }
+    
+    input[type="file"] {
+      margin-bottom: 10px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Personal Information</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+      
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select your gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <label for="photo">Photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required>
+      <br>
+      <label for="aadhar">Any identity: <br>
+    (aadhar card,pan-card, licence etc.)</label>
+      <input type="file" id="aadhar" name="aadhar" accept=".pdf,.jpeg,.jpg,.png" required>
+      <br>
+      <input type="checkbox" id="paymentConfirmation" required>
+      <label for="paymentConfirmation">I confirm the payment of fees.</label>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Personal Information Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* CSS Styling for the form */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(geran-de-klerk-WJkc3xZjSXw-unsplash.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+  
+    .container {
+      height: 91%;
+      top: 2%;
+      right: 2%;
+      width: 86%;
+      position: fixed;
+      padding: 10px;
+      margin: 19px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="checkbox"] {
+      margin-bottom: 10px;
+    }
+
+    input[type="file"] {
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    /* Media Queries */
+    /*@media  (max-width: 768px) {
+      .container {
+        max-width: 600px;
+      }*/
+
+
+      /*--------------->updated<-------------------------------*/
+
+      @media screen and (max-width: 600px) {
+        .container {
+          height: 91%;
+          top: 2%;
+          right: 2%;
+          width: 80%;
+          position: fixed;
+          padding: 10px;
+          margin: 19px;
+          overflow-x: hidden;
+          overflow-y: auto;
+          background-color: rgba(255, 255, 255, 0.95);
+        }
+        
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      select,
+      textarea {
+        font-size:3.5vw;
+        padding:7px; 
+        margin-bottom:7px;
+      }
+      input[type="file"] {
+        font-size: 3.5vw;
+        margin-bottom: 10px;
+      }
+      
+      input[type="submit"] {
+        padding: 8px 16px;
+      }
+      h2 {
+        font-size: 6vw;
+        text-align: center;
+      }
+      label {
+        font-size: 3.8vw;
+        font-weight: bold;
+      }
+    }
+
+
+    @media (min-width:600px) and (max-width: 1024px) {
+        .container {
+          height: 91%;
+          top: 2%;
+          right: 11%;
+          width: 70%;
+          position: fixed;
+          padding: 10px;
+          margin: 19px;
+          overflow-x: hidden;
+          overflow-y: auto;
+          background-color: rgba(255, 255, 255, 0.95);
+        }
+        
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      select,
+      textarea {
+        font-size:25px;
+        padding:10px; 
+        margin-bottom:12px;
+      }
+      input[type="file"] {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      
+      input[type="submit"] {
+        padding: 8px 16px;
+      }
+
+      h2 {
+        font-size: 5.5vw;
+        text-align: center;
+      }
+      label {
+        font-size: 2.5vw;
+        font-weight: bold;
+      }
+    }
+    
+    
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Personal Information</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">Select your gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="photo"><div>Photo:</div></label>
+    <input type="file" id="photo" name="photo" accept="image" required>
+    <br>
+    <label for=" aadhar"><div>Any Other Identity(Aadhar-card,License,Pan-card):</div></label>
+    <input type="file" id="aadhar" name="aadhar" accept=".pdf,.jpeg,.jpg,.png" required>
+    <br>
+    <input type="checkbox" id="paymentConfirmation" required>
+    <label for="paymentConfirmation">I confirm the payment of fees.</label>
+
+    <input type="submit" value="Submit">
+  </div>
+</body>
+
+</html>

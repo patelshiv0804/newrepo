@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUS WEBSITE</title>
+    <link rel="stylesheet" href="bustoure.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <form action="form.php">
+        <header>
+            <h1> SHIVA'S BUS </h1>
+            <hr>
+            <img src="data:image/jpeg;base64,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"
+                alt="image of my bus"  width="121">
+
+        </header>
+
+        <u>!!we are planning for tour.which include all best places in gujarat or around gujarat!!</u>
+        <hr>
+        <main>
+            <p>
+            <div class="main">=>there are three trip in which different places list are available from this list
+                according to
+                your choice you can select one of the section.
+            </div>
+            <hr>
+            </p>
+            <div class="idea">
+                <p>
+
+                </p>
+            </div>
+
+            <!-- //////////////////////////section-1///////////////////////////// -->
+            <!-- <div class="main1">
+                <label for="sectionida">
+                    <input type="radio" name="section" id="sectionidb">TRIP 1
+                </label>
+            </div> -->
+            <div class="trip-heading">
+                <h1>Our trip</h1>
+            </div>
+
+            <H2 class="trip">TRIP-1</H2>
+
+      
+
+            <div class="container">
+                <div class="card">
+                    <div class="img1">
+                        <img src="statue of unity-1.jpg" alt="">
+                    </div>
+                    <div class="content1">
+                        <h2>Statue of unity</h2>
+                        <p> It depicts Indian statesman and independence activist Vallabhbhai Patel (1875–1950), who was the first deputy prime minister and home minister of independent India and an adherent of Mahatma Gandhi </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img2">
+                        <img src="somnath-1.jpg" alt="">
+                    </div>
+                    <div class="content1">
+                        <h2>Somnath</h2>
+                        <p>Somnath is a magnificent temple situated in Sagar Kant of Saurashtra in Gujarat state. One of the 12 holy Jyotirlingas of Lord Shiva is in Jyotirlinga here in Somnath. Somnath is also mentioned in Rigveda.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img3">
+                        <img src="dwarika.jpg"  alt="">
+                    </div>
+                    <div class="content1">
+                        <h2>dwarka</h2>
+                        <p>Dwarka is believed to have been the first capital of Gujarat. The city's name literally means the “gateway to heaven” in Sanskrit, as Dwar means “gate” and ka references “Brahma”.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img3">
+                        <img src="virpur.jpg" alt="">
+                    </div>
+                    <div class="content1">
+                        <h2>virpur</h2>
+                        <p>Virpur is a town in Rajkot district of Gujarat, India. Virpur is the birthplace of saint Jalaram and had a temple dedicated to him here which is popular among pilgrims.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img3">
+                        <img src="gadhda.jpg" alt="">
+                    </div>
+                    <div class="content1">
+                        <h2>Gadhda</h2>
+                        
+                        <p> This temple is one of six temples which was made under the supervision of Swaminarayan, the founder of Swaminarayan Sampradaya. The land for constructing this temple in Gadhada, was donated by the court of Dada Khachar in Gadhada. </p>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="bus-personal-information.html" class="book-now-button">Book Now</a>
+            <br>
+
+
+
+            <!-- //////////////////////section-2///////////////////// -->
+            <!-- <div class="main1">
+                <label for="sectionidb">
+                    <input type="radio" name="section" id="sectionidb">TRIP 2
+                </label>
+            </div>     -->
+            <h2 class="trip">TRIP-2</h2>
+            <div class="container-1">
+                <div class="card">
+                    <div class="img1">
+                        <img src="jodhpur.jpg" alt="">
+                    </div>
+                    <div class="content-1">
+                        <h2>jodhpur</h2>
+                        <p>
+                            Jodhpur, known as the "Blue City" of India, captivates with its majestic Mehrangarh Fort and
+                            vibrant blue-washed houses, offering a glimpse into Rajasthan's rich history and cultural
+                            heritage.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img2">
+                        <img src="udaipur.jpg" alt="">
+                    </div>
+                    <div class="content-1">
+                        <h2>udaipur</h2>
+                        <p> Udaipur, often referred to as the "City of Lakes," is a mesmerizing city in the western
+                            Indian state of Rajasthan. It is renowned for its breathtaking palaces, enchanting lakes,
+                            and rich cultural heritage, making it a popular destination for tourists seeking a blend of
+                            history and natural beauty.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img3">
+                        <img src="kota.jpg" ajmer alt="">
+                    </div>
+                    <div class="content-1">
+                        <h2>kota</h2>
+                        <p>Kota, situated in Rajasthan, India, is a city with several notable tourist attractions. It is
+                            home to the impressive Kota Garh Palace, an architectural marvel, and the picturesque
+                            Kishore Sagar Lake, offering serene boat rides and scenic views for visitors to enjoy.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img3">
+                        <img src="jaipur1.jpg" alt="">
+                    </div>
+                    <div class="content-1">
+                        <h2>jaipur</h2>
+                        <p>
+                            Jaipur, the "Pink City" of India, enchants visitors with its magnificent palaces, such as
+                            the Hawa Mahal and City Palace, showcasing the opulence of Rajput architecture. Its bustling
+                            markets, like Johari Bazaar and Bapu Bazaar, offer a vibrant shopping experience where one
+                            can find exquisite textiles, jewelry.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img3">
+                        <img src="khumbhalgarah.jpg" alt="">
+                    </div>
+                    <div class="content-1">
+                        <h2>khumbhalgarah</h2>
+                        <p>Kumbhalgarh, located in Rajasthan, India, boasts the second-longest continuous wall in the
+                            world after the Great Wall of China, encompassing the Kumbhalgarh Fort and the surrounding
+                            Aravalli Hills.This impressive fortress showcases exquisite architecture, stunning views,
+                            and a rich historical legacy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="bus-personal-information.html" class="book-now-button">Book Now</a>
+            <br>
+
+
+
+
+
+            <!-- ////////////////////////////section-3///////////////////////////////// -->
+            <!-- <div class="main1">
+                <label for="sectionidc">
+                    <input type="radio" name="section" id="sectionidc">TRIP 3
+                </label>
+            </div> -->
+            <H2 class="trip">TRIP-3</H2>
+            <div class="container-2">
+                <div class="card">
+                    <div class="img1">
+                        <img src="kedarnath.jpg" alt="">
+                    </div>
+                    <div class="content-1">
+                        <h2>kedarnath</h2>
+
+                        <p> Kedarnath is a town and Nagar Panchayat in Rudraprayag district of Uttarakhand, India, known
+                            primarily for the Kedarnath Temple. It is approximately 86 kilometres from Rudraprayag, the
+                            district headquarter. Kedarnath is the most remote of the four Chota Char Dham pilgrimage
+                            sites.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img2">
+                        <img src="haridwar.jpg" alt="">
+                    </div>
+                    <div class="content-1">
+                        <h2>haridwar</h2>
+                        <p> The city is situated on the right bank of the Ganges river, at the foothills of the Shivalik
+                            ranges.[5] Haridwar is regarded as a holy place for Hindus, hosting important religious
+                            events and serving as a gateway to several prominent places of worship.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img3">
+                        <img src="badrinath.jpg" alt="">
+                    </div>
+                    <div class="content-1">
+                        <h2>badrinath</h2>
+                        <p>Badarinath or Badarinarayana Temple is a Hindu temple dedicated to Vishnu. It is situated in
+                            the town of Badrinath in Uttarakhand, India. The temple is also one of the 108 Divya Desams
+                            dedicated to Vishnu—holy shrines for Vaishnavas—who is worshipped as Badrinath.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img3">
+                        <img src="gangotri.jpg" alt="">
+                    </div>
+                    <div class="content-1">
+                        <h2>gangotri</h2>
+                        <p>Gangotri is a town and a Nagar Panchayat (municipality) in Uttarkashi district in the state
+                            of Uttarakhand, India. It is 99 km from Uttarkashi, the main district headquarter. It is a
+                            Hindu pilgrim town on the banks of the river Bhagirathi – the origin of the river Ganges.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img3">
+                        <img src="agra.jpg" alt="">
+                    </div>
+                    <div class="content-1">
+                        <h2>agra</h2>
+
+                        <p> Agra is a city in northern India known for being home to the iconic Taj Mahal, a white
+                            marble mausoleum that is considered one of the world's most famous landmarks. It is a
+                            popular tourist destination and a testament to the rich Mughal architectural heritage of the
+                            region.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="bus-personal-information.html" class="book-now-button">Book Now</a>
+
+            </div>
+
+
+
+            <!-- //////////////////////////////PERSONAL DETAILS//////////////////////////////////// -->
+            <!--             
+            <div class="main2">
+                <ul type="circle">
+                    <li>personal information</li><br>
+
+                    <input type="text" placeholder="enter your name">
+                    <input type="text" placeholder="enter your father's name">
+                    <br>
+
+                    <li>enter your date of birth</li>
+                    <input type="date">
+                    <li>enter your email adress</li>
+                    <input type="email" placeholder="email"><br>
+                    <li>enter your phone number</li>
+                    <input type="number" placeholder="In 10 digits"><br>
+                    <li>enter your image in jpeg/png</li>
+                    <input type="file"><br>
+                    <li>aadhar card</li>
+                    <input type="file"><br>
+                    <input type="submit">
+                </ul>
+            </div> -->
+
+            <!-- <b>
+                => according to your selection pay the fees of tour
+            </b>
+            <li>
+                fees for section a= 10000
+            </li>
+            <li>
+                fees for section b=5000
+            </li>
+            <li>
+                fees for section c=25000
+            </li> -->
+            <div class="service">
+                <div class="service-heading">
+                    <h1>Our Services</h1>
+                </div>
+
+                <div class="box">
+                    <div class="s1">
+                        <i class="fa-regular fa-hotel" style="color: #f3b90b"></i>
+                        <h3>affordable service</h3>
+                        <p>Discover comfort without breaking the bank at our affordable hotel, conveniently located on
+                            your bus tour. Immerse yourself in quality amenities, friendly service, and a
+                            budget-friendly stay that leaves you free to explore your destination.</p>
+                    </div>
+
+                    <div class="s1">
+                        <i class="fa-solid fa-utensils" style="color:#f3b90b"></i>
+                        <h3>food and drink</h3>
+                        <p>Discover comfort without breaking the bank at our affordable hotel, conveniently located on
+                            your bus tour. Immerse yourself in quality amenities, friendly service, and a
+                            budget-friendly stay that leaves you free to explore your destination.</p>
+                    </div>
+
+                    <div class="s1">
+                        <i class="fa-solid fa-shield-heart" style="color:#f3b90b"></i>
+                        <h3>safety guide</h3>
+                        <p>Discover comfort without breaking the bank at our affordable hotel, conveniently located on
+                            your bus tour. Immerse yourself in quality amenities, friendly service, and a
+                            budget-friendly stay that leaves you free to explore your destination.</p>
+                    </div>
+                    <div class="s1">
+                        <i class="fa-sharp fa-solid fa-earth-americas" style="color:#f3b90b"></i>
+                        <h3>around the world</h3>
+                        <p>Discover comfort without breaking the bank at our affordable hotel, conveniently located on
+                            your bus tour. Immerse yourself in quality amenities, friendly service, and a
+                            budget-friendly stay that leaves you free to explore your destination.</p>
+                    </div>
+                    <div class="s1">
+                        <i class="fa-solid fa-plane" style="color:#f3b90b"></i>
+                        <h3>fastest travel</h3>
+                        <p>Discover comfort without breaking the bank at our affordable hotel, conveniently located on
+                            your bus tour. Immerse yourself in quality amenities, friendly service, and a
+                            budget-friendly stay that leaves you free to explore your destination.</p>
+                    </div>
+                    <div class="s1">
+                        <i class="fa-solid fa-person-skiing" style="color:#f3b90b"></i>
+                        <h3>adventure</h3>
+                        <p>Discover comfort without breaking the bank at our affordable hotel, conveniently located on
+                            your bus tour. Immerse yourself in quality amenities, friendly service, and a
+                            budget-friendly stay that leaves you free to explore your destination.</p>
+                    </div>
+                </div>
+            </div>
+            <section id="contact">
+                <div class="contact-heading">
+                    <h1>contact us</h1>
+                </div>
+                <div class="containe">
+                    <div class="contant-info">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                
+                        <label for="phone">phone number</label>
+                        <input type="phone" id="phone" name="phone" placeholder="enter your number" required>
+                
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+                
+                        <button type="submit">Send Message</button>
+
+                    </div>
+                    <div class="img-slot">
+                        <img src="contact.jpg" class="image" alt="error">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Bus Tours. All rights reserved.</p>
+        </footer>
+</body>
+
+</html>
