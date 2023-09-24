@@ -357,7 +357,7 @@ h2 {
     transition: 0.7s ease-in-out;
 }
 .container .card:hover{
-    height: 355px;
+    height: 55vh;
 }
 .container .card .img1{
     position: relative;
