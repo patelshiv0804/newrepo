@@ -222,7 +222,7 @@ img {
     .btn::before {
     content: '';
     width: 0;
-    height: 3.5vh;
+    height: 4vh;
     border-radius: 30em;
     position: absolute;
     top: 0;
