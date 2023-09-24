@@ -77,10 +77,10 @@ img {
     }
 }
 
-.navbar ul:hover li {
+/* .navbar ul:hover li {
     filter: blur(1px);
 
-}
+} */
 
 .navbar ul li:hover {
     filter: blur(0);
