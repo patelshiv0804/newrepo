@@ -1128,6 +1128,7 @@ button[type="submit"]:hover {
 /* ////////////////////////////////footer//////////////////////////////// */
 
 footer p {
+    margin-bottom: 0px;
     background-color: #dbd6d6;
     justify-content: center;
     display: flex;
