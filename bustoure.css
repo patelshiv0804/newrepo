@@ -346,6 +346,7 @@ h2 {
 }
 .container .card{
     position: relative;
+    overflow-x: hidden;
     max-width: 266px;
     height: 173px;
     background: #ebe0e0;
@@ -357,7 +358,7 @@ h2 {
     transition: 0.7s ease-in-out;
 }
 .container .card:hover{
-    height: 55vh;
+    height: 360px;
 }
 .container .card .img1{
     position: relative;
