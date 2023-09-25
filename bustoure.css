@@ -732,6 +732,7 @@ h2 {
 }
 
 .container-2 .card:hover .content-1 {
+    overflow-x:hidden;
     visibility: visible;
     opacity: 1;
     padding: 0%;
