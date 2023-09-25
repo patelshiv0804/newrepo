@@ -346,7 +346,7 @@ h2 {
 }
 .container .card{
     position: relative;
-    overflow-x: hidden;
+/*     overflow-x: hidden; */
     max-width: 266px;
     height: 173px;
     background: #ebe0e0;
@@ -398,6 +398,7 @@ h2 {
     margin-top: 3px;
 }
 .container .card:hover .content1{
+    overflow-x:hidden;
     visibility: visible;
     opacity: 1;
     margin-top: -24px;
@@ -473,7 +474,7 @@ h2 {
 }
 
 .container-1 .card {
-    overflow-x:hidden;
+/*     overflow-x:hidden; */
     position: relative;
     max-width: 266px;
     height: 173px;
@@ -532,6 +533,7 @@ h2 {
 }
 
 .container-1 .card:hover .content-1 {
+    overflow-x:hidden;
     visibility: visible;
     opacity: 1;
     padding: 0%;
