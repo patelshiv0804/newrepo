@@ -473,6 +473,7 @@ h2 {
 }
 
 .container-1 .card {
+    overflow-x:hidden;
     position: relative;
     max-width: 266px;
     height: 173px;
