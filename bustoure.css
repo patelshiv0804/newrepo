@@ -48,6 +48,7 @@ h2 {
 }
 @media (max-width:500px) {
     .trip{
+        margin-top: 15px;
         left: 43%;
         position: sticky;
         margin-bottom: 0px;
