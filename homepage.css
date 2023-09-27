@@ -9,8 +9,20 @@
     background-image: linear-gradient(rgba(0, 0, 0, 65%), rgba(0, 0, 0, 0.75)), url(juan-encalada-6mcVaoGNz1w-unsplash.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
+@media  (max-width:500px){
+    .homepage {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 65%), rgba(0, 0, 0, 0.75)),url(500px.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+}
 img {
     height: 5.5vw;
     /* width: 9vw; */
